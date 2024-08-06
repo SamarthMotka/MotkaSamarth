@@ -4,6 +4,7 @@ html, body {
     /* font-family: 'Gambetta', serif;
     font-family: 'General Sans', sans-serif; */
     overflow: hidden;
+    box-sizing: border-box;
 }
 .home{
     height: 100vh;
@@ -19,6 +20,15 @@ html, body {
 #Matrix{
     height: 100%;
     width: 100%;
+}
+#home-content{
+    color: #FFF;
+    width: 130px;
+    height: 200px;
+    font-size: 12px;
+    position: fixed;
+    right: 50px;
+    bottom: 0px;
 }
 .nav{
     z-index: 100;
@@ -130,6 +140,35 @@ transition: ease 0.3s;
     color: #d6d6d6d3;
     transition: ease 0.3s;
 }
+.arrow {
+    border: solid white;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 10px;
+    size: 20px;
+  }
+    
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+.sc-down{
+    position: fixed;
+    right: 35%;
+    top: 86%;
+    height: 50px;
+    width: 50px;
+
+}
+.sc-down i{
+    color: white;
+    
+}
 #contact-content{
     position: fixed;
     top: 50%;
@@ -148,6 +187,10 @@ transition: ease 0.3s;
    cursor: pointer;
 }
 @media screen and (max-width:600px) {
+    .home{
+        height: 100%;
+        width: 100%;
+    }
     .projects{
         display: flex;
         flex-direction: column;
@@ -155,14 +198,14 @@ transition: ease 0.3s;
         right: 50px;
         bottom: -30%;
         overflow: hidden;
-        height: 400px;
+        height: 160px;
     }
     .projects a{
         text-align: right;
         text-decoration: none;
         color: white;
-        font-size: 1.5rem;
-        margin: 20px 0px;
+        font-size: 1rem;
+        margin: 10px 0px;
         font-family: 'Archivo', sans-serif;
         text-transform: uppercase;
     }
@@ -173,6 +216,15 @@ transition: ease 0.3s;
         left: 50%;
     
     }
+    .sc-down{
+        position: fixed;
+        right: 85px;
+        top: 80%;
+        height: 50px;
+        width: 50px;
+    
+    }
+    
 }
 .tab-content {
     display: none; /* Hide all content by default */

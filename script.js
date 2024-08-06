@@ -95,30 +95,3 @@ document.addEventListener('DOMContentLoaded', () => {
         // scrollingDiv.style.transform = 'translate(-50%, -50%)'; // Reset position when mouse leaves
     });
 });
-
-// document.addEventListener('DOMContentLoaded', () => {
-//     const scrollableList = document.querySelector('.projects');
-//     const parentDiv = document.querySelector('.proje');
-
-//     let scrollPosition = 0;
-
-//     parentDiv.addEventListener('wheel', (event) => {
-//         event.preventDefault();
-        
-//         // Calculate the height difference between the parent and the list
-//         const maxScroll = scrollableList.scrollHeight - parentDiv.clientHeight;
-
-//         if (event.deltaY > 0 && scrollPosition < maxScroll) {
-//             scrollPosition += 20; // Scroll down
-//         } else if (event.deltaY < 0 && scrollPosition > 0) {
-//             scrollPosition -= 20; // Scroll up
-//         }
-        
-//         updateScrollPosition();
-//     });
-
-//     function updateScrollPosition() {
-//         scrollableList.style.bottom = `${-scrollPosition}px`;
-//     }
-// });
-
