@@ -126,8 +126,12 @@ transition: ease 0.3s;
     top: 50%;
     height: 200px;
 
-    /* overflow: auto; */
+    overflow: auto;
 }
+
+.projects::-webkit-scrollbar {
+    display: none;
+  }
 .projects a{
     text-align: right;
     text-decoration: none;
@@ -173,6 +177,8 @@ transition: ease 0.3s;
     position: fixed;
     top: 50%;
     left: 70%;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -210,8 +216,14 @@ transition: ease 0.3s;
         text-transform: uppercase;
     }
     .resume-btn a{
-        left: 50%;
+        left: 70%;
     }
+    .resume-btn a{
+   
+        padding: 10px 20px;
+        border-radius: 2px;
+        font-size: 10px;
+        }
     #contact-content{
         left: 50%;
     
@@ -219,7 +231,7 @@ transition: ease 0.3s;
     .sc-down{
         position: fixed;
         right: 85px;
-        top: 80%;
+        top: 75%;
         height: 50px;
         width: 50px;
     
