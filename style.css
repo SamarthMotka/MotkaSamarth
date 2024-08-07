@@ -177,9 +177,12 @@ transition: ease 0.3s;
     position: fixed;
     top: 50%;
     left: 70%;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
 
+}
+.sommm{
+    display: flex;
 }
 
 #contact-content a img{
@@ -216,7 +219,7 @@ transition: ease 0.3s;
         text-transform: uppercase;
     }
     .resume-btn a{
-        left: 70%;
+        left: 50%;
     }
     .resume-btn a{
    
@@ -239,7 +242,7 @@ transition: ease 0.3s;
     
 }
 .tab-content {
-    display: none; /* Hide all content by default */
+    display: none ; /* Hide all content by default */
 }
 .show {
     display: flex; /* Show only the active content */
